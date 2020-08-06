@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 75vh;
+  margin: 5% 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 125%;
+}
+
+main section {
+  width: 90%;
+  margin: auto;
+}
+
+main section h2 {
+  color: #333333;
+  font-size: 3em;
+}
+
+main section ol {
+  border-left: 2px solid #ced9ee;
+  margin-bottom: 1rem;
+}
+
+main section span {
+  display: inline-block;
+  margin: 1em 0;
+  color: #777777;
+}
+
+main section li {
+  margin-left: 2em;
+}
+
+main section a {
+  color: #555555;
+}
+/*# sourceMappingURL=admission.css.map */

@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.landing {
+  height: 50vh;
+  width: 75%;
+  margin: auto;
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing article {
+  width: 40%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.landing article h2 {
+  color: #333333;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+.landing article p {
+  color: #555555;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 20px;
+  border-left: 2px solid #ced9ee;
+}
+
+.landing aside {
+  width: 55%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landing aside section {
+  width: 30%;
+  height: 100%;
+  background: #f0fdfa;
+  border: 2px solid #93d8c3;
+  border-radius: 1rem;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing aside section h3 {
+  color: #0eb582;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.landing aside section p {
+  color: #93d8c3;
+}
+
+.landing aside section:hover {
+  border-color: #f0fdfa;
+}
+
+.courses {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../img/subject_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courses section {
+  width: 70%;
+  margin: auto;
+}
+
+.courses .catagories {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.courses .catagories p {
+  color: #777777;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.courses .catagories h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #333333;
+}
+
+.courses .catagories button {
+  padding: 18px 30px;
+  background: #f0fdfa;
+  color: #0eb582;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border: 2px solid #0eb582;
+  border-radius: 2em;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.courses .catagories button:hover {
+  color: white;
+  background: #0eb582;
+}
+
+.courses .subjects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  justify-items: center;
+}
+
+.courses .subjects section {
+  width: 21em;
+  height: 7.5em;
+  background: white;
+  border: 2px solid #d1f6ed;
+  border-radius: 1em;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courses .subjects section img {
+  height: 4.25em;
+  width: 4.25em;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.courses .subjects section a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.courses .subjects section p {
+  color: #555555;
+  line-height: 26px;
+}
+
+.courses .subjects section:hover {
+  background: #0eb582;
+}
+
+.courses .subjects section:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.courses .subjects section:hover a,
+.courses .subjects section:hover p {
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .landing {
+    width: 95%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing article {
+    width: 90%;
+    height: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .landing article h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.35em;
+  }
+  .landing article p {
+    margin-bottom: 25px;
+  }
+  .landing aside {
+    width: 90%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing aside section {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 15em;
+    border-color: #b2eddb;
+  }
+  .courses {
+    height: 90vh;
+  }
+  .courses .catagories {
+    height: 10%;
+  }
+  .courses section {
+    width: 90%;
+    margin: auto;
+  }
+  .courses .subjects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courses {
+    height: 150vh;
+    background-position: top;
+  }
+  .courses .catagories {
+    height: 15%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .courses .catagories h2 {
+    margin-bottom: 1em;
+  }
+  .courses .subjects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=main.css.map */

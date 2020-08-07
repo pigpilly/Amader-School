@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
-  <body>
+  <body id="body">
     <nav>
       <header>
         <h1 lang="bn">Amader School</h1>
@@ -95,7 +95,7 @@
           </section>
           <section>
             <aside>
-              <img src="./img/subject_icon2.png" alt="Subject 1" />
+              <img src="./img/subject_icon2.png" alt="Subject 2" />
             </aside>
             <article>
               <a href="#">Course 2</a>
@@ -104,7 +104,7 @@
           </section>
           <section>
             <aside>
-              <img src="./img/subject_icon3.png" alt="Subject 1" />
+              <img src="./img/subject_icon3.png" alt="Subject 3" />
             </aside>
             <article>
               <a href="#">Course 3</a>
@@ -113,7 +113,7 @@
           </section>
           <section>
             <aside>
-              <img src="./img/subject_icon4.png" alt="Subject 1" />
+              <img src="./img/subject_icon4.png" alt="Subject 4" />
             </aside>
             <article>
               <a href="#">Course 4</a>
@@ -122,7 +122,7 @@
           </section>
           <section>
             <aside>
-              <img src="./img/subject_icon5.png" alt="Subject 1" />
+              <img src="./img/subject_icon5.png" alt="Subject 5" />
             </aside>
             <article>
               <a href="#">Course 5</a>
@@ -131,7 +131,7 @@
           </section>
           <section>
             <aside>
-              <img src="./img/subject_icon7.png" alt="Subject 1" />
+              <img src="./img/subject_icon7.png" alt="Subject 6" />
             </aside>
             <article>
               <a href="#">Course 6</a>
@@ -144,21 +144,31 @@
 
     <footer>
       <section class="news">
-        <article>
+        <section>
           <p>#Newsletter</p>
           <h2>
             Join our community of students
           </h2>
-        </article>
-        <aside>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="   Enter your email"
-          />
-          <button>Subscribe</button>
-        </aside>
+        </section>
+        <form method="GET">
+          <section>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="   Enter your email"
+            />
+          </section>
+          <section>
+            <button type="submit">
+              <!-- <img
+                src="./img/envelope-solid.svg"
+                alt="Envelope"
+              />&nbsp; -->
+              Subscribe
+            </button>
+          </section>
+        </form>
       </section>
       <section class="links">
         <ul>
@@ -252,7 +262,7 @@
           </li>
         </ul>
       </section>
-      <aside>
+      <section class="copyright">
         <section>
           <p>Copyright © 2020 Amader School. All&nbsp;Rights&nbsp;Reserved.</p>
         </section>
@@ -266,7 +276,7 @@
             >
           </p>
         </section>
-      </aside>
+      </section>
     </footer>
 
     <script src="./js/main.js"></script>

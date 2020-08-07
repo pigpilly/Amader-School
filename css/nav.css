@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+.scroll-lock {
+  height: 100%;
+  overflow: hidden;
 }
 
 nav {
-  height: 5em;
   background: #273c66;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +21,6 @@ nav {
 
 nav header {
   width: 25%;
-  height: 100%;
   background: #0eb582;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,7 +34,12 @@ nav header {
   color: white;
 }
 
+nav header h1 {
+  padding: 1em;
+}
+
 .nav-links {
+  padding: 1.85em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +50,6 @@ nav header {
           align-items: center;
   list-style: none;
   width: 50%;
-  height: 100%;
   margin-left: auto;
 }
 
@@ -61,7 +66,7 @@ nav header {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 63rem) {
   nav {
     position: relative;
   }
@@ -69,6 +74,8 @@ nav header {
     width: 50%;
   }
   .hamburger {
+    background-color: #0eb582;
+    border-radius: 3px;
     position: absolute;
     right: 5%;
     top: 50%;
@@ -79,11 +86,12 @@ nav header {
   }
   .line {
     width: 30px;
-    height: 3px;
+    height: 2px;
     margin: 5px;
     background: white;
   }
   .nav-links {
+    padding: 0;
     position: fixed;
     background: #273c66;
     height: 100vh;
@@ -94,8 +102,8 @@ nav header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-clip-path: circle(100px at 90% -15%);
-            clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(10px at 100% -15%);
+            clip-path: circle(10px at 100% -15%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
@@ -130,8 +138,48 @@ nav header {
   }
   .nav-links.open {
     pointer-events: all;
-    -webkit-clip-path: circle(1200px at 90% -10%);
-            clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+            clip-path: circle(1400px at 90% -10%);
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  nav header {
+    width: 65%;
+  }
+  nav header h1 {
+    font-size: 1.5em;
+  }
+  .nav-links {
+    -webkit-clip-path: circle(10px at 90% -20%);
+            clip-path: circle(10px at 90% -20%);
+  }
+  .nav-links.open {
+    -webkit-clip-path: circle(1200px at 90% -20%);
+            clip-path: circle(1200px at 90% -20%);
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .line {
+    height: 2px;
+  }
+  nav header {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 17rem) {
+  nav header h1 {
+    font-size: 0.75em;
+  }
+  .nav-links {
+    -webkit-clip-path: circle(10px at 95% -35%);
+            clip-path: circle(10px at 95% -35%);
+  }
+  .nav-links.open {
+    -webkit-clip-path: circle(500px at 95% -35%);
+            clip-path: circle(500px at 95% -35%);
   }
 }
 /*# sourceMappingURL=nav.css.map */

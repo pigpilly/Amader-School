@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
-  <body>
+  <body id="body">
     <nav>
       <header>
         <h1 lang="bn">Amader School</h1>
@@ -39,21 +39,31 @@
 
     <footer>
       <section class="news">
-        <article>
+        <section>
           <p>#Newsletter</p>
           <h2>
             Join our community of students
           </h2>
-        </article>
-        <aside>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="   Enter your email"
-          />
-          <button>Subscribe</button>
-        </aside>
+        </section>
+        <form method="GET">
+          <section>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="   Enter your email"
+            />
+          </section>
+          <section>
+            <button type="submit">
+              <!-- <img
+                src="./img/envelope-solid.svg"
+                alt="Envelope"
+              />&nbsp; -->
+              Subscribe
+            </button>
+          </section>
+        </form>
       </section>
       <section class="links">
         <ul>
@@ -147,11 +157,9 @@
           </li>
         </ul>
       </section>
-      <aside>
+      <section class="copyright">
         <section>
-          <p>
-            Copyright © 2020 Amader School. All&nbsp;Rights&nbsp;Reserved.
-          </p>
+          <p>Copyright © 2020 Amader School. All&nbsp;Rights&nbsp;Reserved.</p>
         </section>
         <section>
           <p>
@@ -163,7 +171,7 @@
             >
           </p>
         </section>
-      </aside>
+      </section>
     </footer>
 
     <script src="./js/main.js"></script>

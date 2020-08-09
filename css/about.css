@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  margin: 1em 0;
+  padding: 96px 0;
+  padding-bottom: 125px;
+  background-image: url(../img/course_bg-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main p,
+main h1 {
+  text-align: center;
+  color: white;
+}
+
+main h1 {
+  margin-bottom: 1em;
+}
+
+main div {
+  width: 75%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3em;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+main div img {
+  max-width: 75%;
+  margin-bottom: 1em;
+}
+
+main div section {
+  padding: 1em 5em 1em 2em;
+  background-color: #c1f3e6;
+  border-radius: 1em;
+  -webkit-box-shadow: 0.625rem 0.625rem 2rem rgba(104, 74, 74, 0.1);
+          box-shadow: 0.625rem 0.625rem 2rem rgba(104, 74, 74, 0.1);
+  overflow: hidden;
+}
+
+main div section h2,
+main div section ul {
+  margin: 1em 0;
+}
+
+main div section h2 {
+  color: #333333;
+}
+
+main div section ul {
+  list-style: none;
+}
+
+main div section ul li {
+  position: relative;
+  margin-left: 1em;
+  color: #555555;
+}
+
+main div section ul li::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-1em, -50%);
+          transform: translate(-1em, -50%);
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #0eb582;
+}
+
+main div section:hover {
+  -webkit-box-shadow: 0.625rem 0.625rem 2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0.625rem 0.625rem 2rem rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/*# sourceMappingURL=about.css.map */

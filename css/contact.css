@@ -161,7 +161,7 @@ main .container .wrapper .contact form button:hover {
   }
 
 /* main .container .wrapper .company-info ul */
-  main .container .wrapper .company-info h2,
+  main .container .wrapper .company-info h2
   {
     text-align: center;
   }
